@@ -1,0 +1,10 @@
+/* huisstijl custom properties, kijk huistijl sheet voor meer informatie */
+
+:root {
+  --lifely-grey99: #3c3b34;
+  --lifely-grey70: #9b9a92;
+  --lifely-grey50: #c6c5bd;
+  --lifely-grey20: #eaeae6;
+  --lifely-bg-grey: #f6f6f4;
+  --lifely-accent-red: #ff6b6b;
+}
