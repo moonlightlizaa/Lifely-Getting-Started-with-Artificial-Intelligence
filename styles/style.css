@@ -7,23 +7,149 @@
   --lifely-grey20: #eaeae6;
   --lifely-bg-grey: #f6f6f4;
   --lifely-accent-red: #ff6b6b;
+  --white: #ffffff;
 }
 
 /* mobile view: < 480px width  */
-
 body {
-  background: red;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0px;
 }
-/* tablet view: 480px width */
 
-@media (min-width: 30em) {
+h1 {
+  font-family: "aktiv-grotesk";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: 0.05em;
+  color: var(--lifely-grey99);
+  margin: 0px;
+}
+
+h2 {
+  font-family: "aktiv-grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: var(--lifely-grey99);
+}
+
+/* page title */
+
+.title-space {
+  background-image: url("../assets/Foto_s/Studio/intro.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 355px;
+  width: 100%;
+  margin-bottom: 75px;
+}
+
+.title {
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 20px;
+}
+
+.intro-text {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  letter-spacing: 0.04em;
+  color: var(--lifely-grey99);
+
+  margin-bottom: 15px;
+}
+
+/* abstract */
+.abstract {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.abstract-image img {
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+.abstract-text {
+  width: 300px;
+}
+
+.lifely-button {
+  background-color: var(--lifely-accent-red);
+  border: none;
+  color: var(--white);
+  padding: 15px 32px;
+  font-family: "aktiv-grotesk";
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+
+  font-size: 14px;
+  margin: 15px 5px;
+}
+
+/*  slightly bigger phones */
+@media screen and (min-width: 414px) {
+  body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0px;
+  }
+
+  h1 {
+    font-family: "aktiv-grotesk";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: var(--lifely-grey99);
+    margin: 0px;
+  }
+
+  .title-space {
+    background-image: url("../assets/Foto_s/Studio/intro.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 75px;
+  }
+
+  .title {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 20px;
+  }
+
+  .intro-text {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    color: var(--lifely-grey99);
+
+    margin-bottom: 20px;
+  }
+}
+
+/* tablet view: 480px width */
+@media screen and (min-width: 30em) {
   body {
     background: green;
   }
 }
 
 /* laptop view, small screens: starting at 769px */
-@media (min-width: 48.0625em) {
+@media screen and (min-width: 48.0625em) {
   body {
     background: rgb(128, 0, 0);
   }
@@ -31,7 +157,7 @@ body {
 
 /* desktop, grote schermen: starting at 1025px  */
 
-@media (min-width: 64.0625em) {
+@media screen and (min-width: 64.0625em) {
   body {
     background: rgb(94, 0, 128);
   }
