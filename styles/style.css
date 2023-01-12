@@ -8,3 +8,31 @@
   --lifely-bg-grey: #f6f6f4;
   --lifely-accent-red: #ff6b6b;
 }
+
+/* mobile view: < 480px width  */
+
+body {
+  background: red;
+}
+/* tablet view: 480px width */
+
+@media (min-width: 30em) {
+  body {
+    background: green;
+  }
+}
+
+/* laptop view, small screens: starting at 769px */
+@media (min-width: 48.0625em) {
+  body {
+    background: rgb(128, 0, 0);
+  }
+}
+
+/* desktop, grote schermen: starting at 1025px  */
+
+@media (min-width: 64.0625em) {
+  body {
+    background: rgb(94, 0, 128);
+  }
+}
