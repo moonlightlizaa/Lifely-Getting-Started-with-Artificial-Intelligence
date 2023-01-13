@@ -139,17 +139,13 @@ h2 {
 
 /* tablet view: 480px width */
 @media screen and (min-width: 30em) {
-
 }
 
 /* laptop view, small screens: starting at 769px */
 @media screen and (min-width: 48.0625em) {
-
 }
 
 /* desktop, grote schermen: starting at 1025px  */
 
 @media screen and (min-width: 64.0625em) {
-
-
- 
+}
