@@ -40,9 +40,6 @@ h2 {
 /* page title */
 
 .title-space {
-  background-image: url("../assets/Foto_s/Studio/intro.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
   height: 355px;
   width: 100%;
   margin-bottom: 75px;
@@ -114,7 +111,6 @@ h2 {
   }
 
   .title-space {
-    background-image: url("../assets/Foto_s/Studio/intro.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     height: 400px;
@@ -160,5 +156,8 @@ h2 {
 @media screen and (min-width: 64.0625em) {
   body {
     background: rgb(94, 0, 128);
+  }
+
+  .title-space {
   }
 }
