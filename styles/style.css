@@ -40,9 +40,9 @@ h2 {
 /* page title */
 
 .title-space {
-  height: 355px;
+  height: 300px;
   width: 100%;
-  margin-bottom: 75px;
+  margin-bottom: 10px;
 }
 
 .title {
@@ -90,51 +90,6 @@ h2 {
 
   font-size: 14px;
   margin: 15px 5px;
-}
-
-/*  slightly bigger phones */
-@media screen and (min-width: 414px) {
-  body {
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0px;
-  }
-
-  h1 {
-    font-family: "aktiv-grotesk";
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 46px;
-    letter-spacing: 0.05em;
-    color: var(--lifely-grey99);
-    margin: 0px;
-  }
-
-  .title-space {
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 400px;
-    width: 100%;
-    margin-bottom: 75px;
-  }
-
-  .title {
-    position: absolute;
-    margin-top: 70px;
-    margin-left: 20px;
-  }
-
-  .intro-text {
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: 0.04em;
-    color: var(--lifely-grey99);
-
-    margin-bottom: 20px;
-  }
 }
 
 /* tablet view: 480px width */
