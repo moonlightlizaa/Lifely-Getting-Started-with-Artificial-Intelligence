@@ -10,7 +10,7 @@
   --white: #ffffff;
 }
 
-/* mobile view: < 480px width  */
+/* mobile view: < 480px width (30em)  */
 body {
   box-sizing: border-box;
   margin: 0 auto;
@@ -20,8 +20,8 @@ body {
 h1 {
   font-family: "aktiv-grotesk";
   font-weight: 700;
-  font-size: 30px;
-  line-height: 42px;
+  font-size: 1.875em;
+  line-height: 2.625em;
   letter-spacing: 0.05em;
   color: var(--lifely-grey99);
   margin: 0px;
@@ -31,8 +31,8 @@ h2 {
   font-family: "aktiv-grotesk";
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.125em;
+  line-height: 1.875em;
   letter-spacing: 0.05em;
   color: var(--lifely-grey99);
 }
@@ -40,8 +40,7 @@ h2 {
 /* page title */
 
 .title-space {
-  height: 300px;
-  width: 100%;
+  height: 18.75em;
   margin-bottom: 10px;
 }
 
@@ -55,8 +54,8 @@ h2 {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 19px;
+  font-size: 0.75em;
+  line-height: 1.1875em;
   letter-spacing: 0.04em;
   color: var(--lifely-grey99);
 
@@ -70,12 +69,12 @@ h2 {
   align-items: center;
 }
 .abstract-image img {
-  width: 300px;
+  width: 18.75em;
   margin-bottom: 40px;
 }
 
 .abstract-text {
-  width: 300px;
+  width: 18.75em;
 }
 
 .lifely-button {
@@ -85,10 +84,10 @@ h2 {
   padding: 15px 32px;
   font-family: "aktiv-grotesk";
   font-weight: 700;
-  line-height: 18px;
+  line-height: 1.125em;
   text-align: center;
 
-  font-size: 14px;
+  font-size: 0.875em;
   margin: 15px 5px;
 }
 
