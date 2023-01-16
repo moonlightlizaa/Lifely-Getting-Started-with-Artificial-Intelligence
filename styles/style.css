@@ -23,7 +23,9 @@
   --lifely-base-font: 300 1.125em/1.775em "aktiv-grotesk", sans-serif;
 }
 
-/* mobile view: < 480px width (30em)  */
+/* 
+                            mobile view: < 480px width (30em)  
+*/
 body {
   box-sizing: border-box;
   margin: 0 auto;
@@ -42,7 +44,7 @@ p {
 }
 
 /* 
-navbar 
+                              navbar 
 */
 
 header {
@@ -83,7 +85,7 @@ svg {
 }
 
 /* 
-page title 
+                                page title 
 */
 
 .intro {
@@ -114,7 +116,7 @@ page title
 }
 
 /* 
-abstract section
+                            abstract section
 */
 
 .abstract {
@@ -128,7 +130,7 @@ abstract section
 }
 
 /* 
-                    lifely buttons
+                                 lifely buttons
 */
 
 .call-to-action {
@@ -176,7 +178,7 @@ abstract section
 }
 
 /* 
-              dictionary-quote
+                                   dictionary-quote
  */
 
 .dictionary-quote {
@@ -200,15 +202,21 @@ abstract section
   border-bottom: 1px solid hsla(53, 7%, 76%, 0.5);
 }
 
-/* tablet view: 480px width */
+/* 
+                                  tablet view: 480px width 
+*/
 @media screen and (min-width: 30em) {
 }
 
-/* laptop view, small screens: starting at 769px */
+/* 
+                            laptop view, small screens: starting at 769px 
+*/
 @media screen and (min-width: 48.0625em) {
 }
 
-/* desktop, grote schermen: starting at 1025px  */
+/* 
+                                    desktop, grote schermen: starting at 1025px  
+*/
 
 @media screen and (min-width: 64.0625em) {
 }
