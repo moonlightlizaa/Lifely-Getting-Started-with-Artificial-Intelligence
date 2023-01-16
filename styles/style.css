@@ -18,7 +18,7 @@
   */
 
   --lifely-primary-font: 700 2.5em/1.125em "aktiv-grotesk", sans-serif;
-  --lifely-secondary-font: 400 0.85em/0.5em "Playfair Display", serif;
+  --lifely-secondary-font: 400 1.125em/0.5em "Playfair Display", serif;
   --lifely-base-font: 100 1.125em/1.775em "aktiv-grotesk", sans-serif;
 }
 
@@ -87,19 +87,23 @@ svg {
 page title 
 */
 
+.intro {
+  margin-bottom: 35px;
+}
+
 .intro-oneliner {
   font: var(--lifely-secondary-font);
   font-style: normal;
 
   letter-spacing: 0.04em;
-  color: var(--lifely-grey99);
+  color: var(--lifely-grey70);
 
   margin-bottom: 15px;
 }
 
 .title-space {
   display: grid;
-  margin: 25px;
+  margin: 25px 25px 75px 25px;
   grid:
     "H" 13em
     "C1" 1fr
@@ -120,8 +124,8 @@ abstract section
 
 .abstract-image img {
   width: 320px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 /* 
