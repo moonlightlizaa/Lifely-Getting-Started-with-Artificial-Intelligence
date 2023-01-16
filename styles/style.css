@@ -128,28 +128,39 @@ abstract section
 }
 
 /* 
-lifely button 
+                    lifely buttons
 */
 
-.lifely-button {
+.call-to-action {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  margin-bottom: -40px;
+}
+
+.lifely-primary-button {
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  padding: 12px 32px;
+  align-items: center;
+
   background-color: var(--lifely-accent-red);
   border: none;
   color: var(--white);
-  padding: 15px 32px;
   font-family: "aktiv-grotesk";
   font-weight: 700;
   line-height: 1.125em;
-  text-align: center;
 
   font-size: 0.875em;
-  margin: 15px 5px;
+  margin: 0px 40px 40px 0px;
 
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
   transition-property: background-color, color;
 }
 
-.lifely-button:hover {
+.lifely-primary-button:hover {
   background-color: var(--lifely-hover-red);
 
   border: none;
@@ -162,6 +173,21 @@ lifely button
   font-size: 0.875em;
   margin: 15px 5px;
 }
+
+.lifely-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  font-family: "aktiv-grotesk";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ff6b6b;
+}
+
+/* 
+              dictionary-quote
+ */
 
 .dictionary-quote {
   background: var(--lifely-grey99);
