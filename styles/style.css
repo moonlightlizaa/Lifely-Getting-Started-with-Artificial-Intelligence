@@ -162,16 +162,6 @@ abstract section
 
 .lifely-primary-button:hover {
   background-color: var(--lifely-hover-red);
-
-  border: none;
-  color: var(--white);
-  padding: 15px 32px;
-  font-family: "aktiv-grotesk";
-  font-weight: 700;
-  line-height: 1.125em;
-  text-align: center;
-  font-size: 0.875em;
-  margin: 15px 5px;
 }
 
 .lifely-secondary-button {
