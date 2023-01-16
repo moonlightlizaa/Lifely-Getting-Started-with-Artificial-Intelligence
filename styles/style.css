@@ -19,7 +19,7 @@
   */
 
   --lifely-primary-font: 700 2.5em/1.125em "aktiv-grotesk", sans-serif;
-  --lifely-secondary-font: 400 1.125em/0.5em "Playfair Display", serif;
+  --lifely-secondary-font: 400 1.125em/1.875em "Playfair Display", serif;
   --lifely-base-font: 300 1.125em/1.775em "aktiv-grotesk", sans-serif;
 }
 
@@ -32,14 +32,12 @@ body {
 
 h1 {
   font: var(--lifely-primary-font);
-  letter-spacing: 0.05em;
   color: var(--lifely-grey99);
   margin: 0px;
 }
 
 p {
   font: var(--lifely-base-font);
-  letter-spacing: 0.05em;
   color: var(--lifely-grey99);
 }
 
@@ -106,7 +104,7 @@ page title
   display: grid;
   margin: 25px 25px 75px 25px;
   grid:
-    "H" 13em
+    "H" 340px
     "C1" 1fr
     / 1fr;
 }
@@ -124,8 +122,8 @@ abstract section
 }
 
 .abstract-image img {
-  width: 320px;
-  margin-top: 50px;
+  width: 340px;
+
   margin-bottom: 30px;
 }
 
@@ -167,11 +165,23 @@ lifely button
 
 .dictionary-quote {
   background: var(--lifely-grey99);
+  padding: 65px 16px 65px 16px;
+}
+
+.dictionary-quote dfn {
+  font: 100 1.125em/1.875em "Playfair Display", serif;
+  color: var(--white);
 }
 
 .dictionary-quote p {
   font: 300 1em/1.625em "aktiv-grotesk", sans-serif;
   color: var(--white);
+}
+
+.subtext {
+  margin: 8px 0 0;
+  padding-bottom: 24px;
+  border-bottom: 1px solid hsla(53, 7%, 76%, 0.5);
 }
 
 /* tablet view: 480px width */
