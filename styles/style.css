@@ -15,11 +15,12 @@
    !! only use primary font for titles
    !! only use secondary font for the intro onliner
    !! only use base font for the normal text
+
   */
 
   --lifely-primary-font: 700 2.5em/1.125em "aktiv-grotesk", sans-serif;
   --lifely-secondary-font: 400 1.125em/0.5em "Playfair Display", serif;
-  --lifely-base-font: 100 1.125em/1.775em "aktiv-grotesk", sans-serif;
+  --lifely-base-font: 300 1.125em/1.775em "aktiv-grotesk", sans-serif;
 }
 
 /* mobile view: < 480px width (30em)  */
@@ -166,6 +167,11 @@ lifely button
 
 .dictionary-quote {
   background: var(--lifely-grey99);
+}
+
+.dictionary-quote p {
+  font: 300 1em/1.625em "aktiv-grotesk", sans-serif;
+  color: var(--white);
 }
 
 /* tablet view: 480px width */
