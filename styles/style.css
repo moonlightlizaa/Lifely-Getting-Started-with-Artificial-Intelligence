@@ -1,13 +1,20 @@
 /* huisstijl custom properties, kijk huistijl sheet voor meer informatie */
 
 :root {
+  /* colors */
   --lifely-grey99: #3c3b34;
   --lifely-grey70: #9b9a92;
   --lifely-grey50: #c6c5bd;
   --lifely-grey20: #eaeae6;
   --lifely-bg-grey: #f6f6f4;
   --lifely-accent-red: #ff6b6b;
+  --lifely-hover-red: #eb5a5a;
   --white: #ffffff;
+
+  /* text */
+  --lifely-primary-font: "aktiv-grotesk", sans-serif;
+  --lifely-primary-fs: 1.875em;
+  --lifely-primary-lh: 1.5em;
 }
 
 /* mobile view: < 480px width (30em)  */
@@ -18,17 +25,22 @@ body {
 }
 
 h1 {
-  font-family: "aktiv-grotesk";
+  font-family: var(--lifely-primary-font);
   font-weight: 700;
-  font-size: 1.875em;
-  line-height: 1.5em;
+  font-size: var(--lifely-primary-fs);
+  line-height: var(--lifely-primary-lh);
   letter-spacing: 0.05em;
   color: var(--lifely-grey99);
   margin: 0px;
+
+  transform: translateY(0);
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.08, 0.415, 0.025, 0.87);
+  transition-delay: 0s;
 }
 
 h2 {
-  font-family: "aktiv-grotesk";
+  font-family: "aktiv-grotesk", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 1.125em;
@@ -37,21 +49,72 @@ h2 {
   color: var(--lifely-grey99);
 }
 
-/* page title */
+p {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 1em;
+  line-height: 1.625em;
+  color: var(--white);
+}
+
+/* 
+navbar 
+*/
+
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--white);
+}
+
+.logo-img {
+  width: 3rem;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+  height: 2rem;
+  font-weight: 300;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 1rem;
+}
+
+.span-text-menu {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 0.5rem;
+}
+
+svg {
+  width: 1rem;
+  align-items: center;
+}
+
+/* 
+page title 
+*/
 
 .title-space {
-  height: 18.75em;
-  margin-bottom: 10px;
+  display: grid;
+  margin: 25px;
+  grid:
+    "H" 13em
+    "C1" 1fr
+    / 1fr;
 }
 
 .title {
-  position: absolute;
-  margin-top: 70px;
-  margin-left: 20px;
+  grid-area: H;
 }
 
 .intro-text {
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.75em;
@@ -62,20 +125,23 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* abstract */
+/* 
+abstract section
+*/
+
 .abstract {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.abstract-image img {
-  width: 300px;
-  margin-bottom: 40px;
+  grid-area: C1;
 }
 
-.abstract-text {
-  width: 18.75em;
+.abstract-image img {
+  width: 320px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
+
+/* 
+lifely button 
+*/
 
 .lifely-button {
   background-color: var(--lifely-accent-red);
@@ -89,6 +155,28 @@ h2 {
 
   font-size: 0.875em;
   margin: 15px 5px;
+
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-property: background-color, color;
+}
+
+.lifely-button:hover {
+  background-color: var(--lifely-hover-red);
+
+  border: none;
+  color: var(--white);
+  padding: 15px 32px;
+  font-family: "aktiv-grotesk";
+  font-weight: 700;
+  line-height: 1.125em;
+  text-align: center;
+  font-size: 0.875em;
+  margin: 15px 5px;
+}
+
+.dictionary-quote {
+  background: var(--lifely-grey99);
 }
 
 /* tablet view: 480px width */
