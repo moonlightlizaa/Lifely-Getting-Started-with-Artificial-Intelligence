@@ -102,7 +102,7 @@ svg {
   margin-bottom: 15px;
 }
 
-.title-space {
+.main-content {
   display: grid;
   margin: 25px 25px 75px 25px;
   grid:
@@ -189,19 +189,42 @@ svg {
 .dictionary-quote dfn {
   font: 100 1.125em/1.875em "Playfair Display", serif;
   color: var(--white);
+  margin: 8px 8px 0px 8px;
 }
 
 .dictionary-quote p {
   font: 300 1em/1.625em "aktiv-grotesk", sans-serif;
   color: var(--white);
+  margin: 8px 8px 0px 8px;
 }
 
 .subtext {
-  margin: 8px 0 0;
+  opacity: 60%;
+  margin: 8px 8px 0px 8px;
   padding-bottom: 24px;
   border-bottom: 1px solid hsla(53, 7%, 76%, 0.5);
 }
 
+/* 
+                              ai steps 
+*/
+
+.ai-steps {
+  display: grid;
+  margin: 25px 25px 75px 25px;
+  grid:
+    "T" 100px
+    "S" 1fr
+    / 1fr;
+}
+
+.ai-steps-title {
+  grid-area: T;
+}
+
+.ai-steps-cards {
+  grid-area: S;
+}
 /* 
                                   tablet view: 480px width 
 */
