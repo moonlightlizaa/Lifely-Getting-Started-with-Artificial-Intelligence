@@ -11,16 +11,20 @@
   --lifely-hover-red: #eb5a5a;
   --white: #ffffff;
 
-  /* typography:
+  /* typography for mobile:
    !! only use primary font for titles
    !! only use secondary font for the intro onliner
-   !! only use base font for the normal text
+   !! only use base font for the normal text (p)
 
   */
+  --lifely-mobile-primary-font: 700 2.5em/1.125em "aktiv-grotesk", sans-serif;
+  --lifely-mobile-secondary-font: 400 1.125em/1.875em "Playfair Display", serif;
+  --lifely-mobile-base-font: 300 1.125em/1.775em "aktiv-grotesk", sans-serif;
 
-  --lifely-primary-font: 700 2.5em/1.125em "aktiv-grotesk", sans-serif;
-  --lifely-secondary-font: 400 1.125em/1.875em "Playfair Display", serif;
-  --lifely-base-font: 300 1.125em/1.775em "aktiv-grotesk", sans-serif;
+  --lifely-movile-ai-steps: 700 1em/1.5em "aktiv-grotesk", sans-serif;
+  --lifely-mobile-ai-title-font: 700 1.5em/1.92em "aktiv-grotesk", sans-serif;
+  --lifely-mobile-ai-subtitle-font: 700 1.25em/1.75em "aktiv-grotesk",
+    sans-serif;
 }
 
 /* 
@@ -33,13 +37,13 @@ body {
 }
 
 h1 {
-  font: var(--lifely-primary-font);
+  font: var(--lifely-mobile-primary-font);
   color: var(--lifely-grey99);
   margin: 0px;
 }
 
 p {
-  font: var(--lifely-base-font);
+  font: var(--lifely-mobile-base-font);
   color: var(--lifely-grey99);
 }
 
@@ -89,30 +93,34 @@ svg {
 */
 
 .intro {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .intro-oneliner {
-  font: var(--lifely-secondary-font);
+  font: var(--lifely-mobile-secondary-font);
   font-style: normal;
 
   letter-spacing: 0.04em;
   color: var(--lifely-grey70);
 
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 .main-content {
   display: grid;
   margin: 25px 25px 75px 25px;
   grid:
-    "H" 340px
+    "H" 0.5fr
     "C1" 1fr
     / 1fr;
 }
 
 .title {
   grid-area: H;
+}
+
+.main-title-box {
+  margin-bottom: 30px;
 }
 
 /* 
@@ -124,7 +132,7 @@ svg {
 }
 
 .abstract-image img {
-  width: 340px;
+  width: 100%;
 
   margin-bottom: 30px;
 }
@@ -209,21 +217,58 @@ svg {
                               ai steps 
 */
 
-.ai-steps {
-  display: grid;
-  margin: 25px 25px 75px 25px;
-  grid:
-    "T" 100px
-    "S" 1fr
-    / 1fr;
+.ai-steps-main {
+  border-left: 1px solid hsla(53, 7%, 76%, 0.5);
 }
 
-.ai-steps-title {
-  grid-area: T;
+.ai-steps-main {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 80px;
+
+  width: calc(100% - 1rem);
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
-.ai-steps-cards {
-  grid-area: S;
+.ai-steps-main .ai-steps-title {
+  padding: 0px 16px 0px 16px;
+  font: var(--lifely-mobile-secondary-font);
+  color: var(--lifely-grey50);
+}
+
+.ai-steps-content .ai-steps-list {
+  padding: 0px 16px 0px 16px;
+}
+
+.ai-steps-content .ai-steps-list .step {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.ai-steps-content .ai-steps-list .step .step-count {
+  flex-shrink: 0;
+  margin-bottom: 8px;
+
+  font: var(--lifely-movile-ai-steps);
+  color: var(--lifely-accent-red);
+}
+
+.ai-steps-content .ai-steps-list .step .step-title {
+  width: calc(100% - 1rem);
+  margin-right: 0.5rem;
+  margin: 0px 0px 24px 0px;
+
+  font: var(--lifely-mobile-ai-title-font);
+  color: var(--lifely-grey99);
+}
+
+.ai-steps-content .ai-steps-list .step .step-subtitle {
+  font: var(--lifely-mobile-ai-subtitle-font);
+  color: var(--lifely-grey99);
+  margin: 0px 0px 8px 0px;
 }
 /* 
                                   tablet view: 480px width 
