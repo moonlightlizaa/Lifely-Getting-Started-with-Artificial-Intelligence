@@ -17,9 +17,11 @@
    !! only use base font for the normal text (p)
 
   */
-  --lifely-mobile-primary-font: 700 2.5em/1.125em "aktiv-grotesk", sans-serif;
+  --lifely-mobile-primary-font: 700 40px/50px "aktiv-grotesk", sans-serif;
   --lifely-mobile-secondary-font: 400 1.125em/1.875em "Playfair Display", serif;
   --lifely-mobile-base-font: 300 1.125em/1.775em "aktiv-grotesk", sans-serif;
+  --lifely-mobile-footer-font: 300 1em/1.28em "aktiv-grotesk", sans-serif;
+  --lifely-mobile-footer-title-font: 700 1em/1.28em "aktiv-grotesk", sans-serif;
 
   --lifely-movile-ai-steps: 700 1em/1.5em "aktiv-grotesk", sans-serif;
   --lifely-mobile-ai-title-font: 700 1.5em/1.92em "aktiv-grotesk", sans-serif;
@@ -270,6 +272,63 @@ svg {
   color: var(--lifely-grey99);
   margin: 0px 0px 8px 0px;
 }
+
+/* 
+                                    footer 
+*/
+
+footer {
+  position: relative;
+  background-color: var(--lifely-grey99);
+  color: var(--white);
+  padding-top: 30px;
+  padding-bottom: 10px;
+
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-flow: row wrap;
+  width: calc(100% - 1rem);
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  height: 24px;
+}
+
+.footer .main-content {
+  padding: 8px 0;
+  color: #c6c5bd;
+  text-decoration: none;
+  display: flex;
+  width: calc(100% - 1rem);
+}
+
+.footer-links {
+  padding: 0px 0px 8px 0px;
+}
+
+.footer-links .footer-item {
+  display: flex;
+  font: var(--lifely-mobile-footer-font);
+  color: var(--lifely-grey50);
+  list-style: none;
+  padding: 8px 0;
+}
+
+.footer-content .footer-text-title {
+  font: var(--lifely-mobile-footer-title-font);
+}
+
+.footer-content .footer-titles {
+  width: calc(100% - 1rem);
+}
+
 /* 
                                   tablet view: 480px width 
 */
