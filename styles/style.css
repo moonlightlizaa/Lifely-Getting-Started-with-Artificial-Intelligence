@@ -274,8 +274,34 @@ svg {
   color: var(--lifely-grey99);
   margin: 0px 0px 8px 0px;
 }
+
 /* 
-                          contact
+                                  cases
+ */
+
+.cases {
+  display: grid;
+  margin: 50px 25px 50px 25px;
+  grid:
+    "T" 1fr
+    "C1" 1fr
+    "C" 1fr
+    / 1fr;
+}
+
+.cases-title {
+  grid-area: T;
+}
+
+.case-1 {
+  grid-area: C1;
+}
+
+.case-2 {
+  grid-area: C2;
+}
+/* 
+                                  contact
  */
 
 .contact {
@@ -283,11 +309,24 @@ svg {
   margin: 50px 25px 50px 25px;
   grid:
     "T" 0.5fr
-    "C" 1fr
+    "M" 1fr
+    "C" 100%
     / 1fr;
 }
 
-/* CALENDER */
+.contact img {
+  width: 100%;
+  grid-area: T;
+  margin-bottom: 25px;
+}
+
+.contact-title {
+  grid-area: M;
+}
+
+/* 
+                                CALENDER
+ */
 
 .wrapper {
   width: 100%;
