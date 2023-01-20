@@ -218,7 +218,9 @@ svg {
 /* 
                               ai steps 
 */
-
+.ai-sprint-steps {
+  margin-bottom: 0px 25px 25px 50px;
+}
 .ai-steps-main {
   border-left: 1px solid hsla(53, 7%, 76%, 0.5);
 }
@@ -271,6 +273,116 @@ svg {
   font: var(--lifely-mobile-ai-subtitle-font);
   color: var(--lifely-grey99);
   margin: 0px 0px 8px 0px;
+}
+/* 
+                          contact
+ */
+
+.contact {
+  display: grid;
+  margin: 50px 25px 50px 25px;
+  grid:
+    "T" 0.5fr
+    "C" 1fr
+    / 1fr;
+}
+
+/* CALENDER */
+
+.wrapper {
+  width: 100%;
+  background: var(--white);
+  border-radius: 10px;
+
+  grid-area: C;
+}
+.wrapper .months {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px 15px;
+  justify-content: space-between;
+  font-family: "aktiv-grotesk", sans-serif;
+}
+.months .icons {
+  display: flex;
+}
+.months .icons span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: var(--lifely-grey99);
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child {
+  margin-right: -10px;
+}
+.months .icons span:hover {
+  background: #f2f2f2;
+}
+.months .current-date {
+  font-size: 1.45rem;
+  font-weight: 500;
+  font-family: "aktiv-grotesk", sans-serif;
+  color: var(--lifely-grey99);
+}
+.calendar {
+  padding: 0px;
+}
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+  padding-left: 0px;
+}
+.calendar .days {
+  margin-bottom: 20px;
+  padding-left: 0px;
+}
+.calendar li {
+  color: var(--lifely-grey99);
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 400;
+}
+.calendar .weeks li {
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive {
+  color: var(--lifely-grey50);
+}
+.days li.active {
+  color: #fff;
+}
+.days li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before {
+  background: var(--lifely-accent-red);
+}
+.days li:not(.active):hover::before {
+  background: #f2f2f2;
 }
 
 /* 
