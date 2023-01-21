@@ -27,6 +27,15 @@
   --lifely-mobile-ai-title-font: 700 1.5em/1.92em "aktiv-grotesk", sans-serif;
   --lifely-mobile-ai-subtitle-font: 700 1.25em/1.75em "aktiv-grotesk",
     sans-serif;
+
+  /* typography for big screen:
+   !! only use primary font for titles
+   !! only use secondary font for the intro onliner
+   !! only use base font for the normal text (p)
+  */
+
+  --lifely-web-big-primary-font: 700 56px/68px "aktiv-grotesk", sans-serif;
+  --lifely-web-big-secondary-font: 400 24px/34px "Playfair Display", serif;
 }
 
 /* 
@@ -490,6 +499,17 @@ footer {
                             laptop view, small screens: starting at 769px 
 */
 @media screen and (min-width: 48.0625em) {
+  h1 {
+    font: var(--lifely-web-big-primary-font);
+    color: var(--lifely-grey99);
+    margin: 0px;
+  }
+
+  p {
+    font: var(--lifely-mobile-base-font);
+    color: var(--lifely-grey99);
+  }
+
   .main-content {
     margin: 0px 0px 30px 0px;
   }
@@ -561,26 +581,24 @@ footer {
 
     display: grid;
     grid:
-      ". . . . . .  . . ." 1fr
-      ". . . t1 t1 t1 . . ." 1fr
+      ". . . t1 t1 t1 t1 . ." 1fr
+      ". . . t2 t2 t2 . . ." 1fr
       ". . . t2 t2 t2 . . ." 1fr
       ". . . . . . . . ." 1fr
-      ". . . . . . . . ." 1fr
-      ". . . . . . . . ." 1fr
-      / 1fr 1fr 10px 1fr 1fr 40px 1fr 1fr;
+      / 1fr 1fr 50px 1fr 1fr 40px 1fr 1fr;
     gap: 10px;
 
     margin-bottom: 100px;
   }
 
   .intro {
-    margin: 0px;
     grid-area: t1;
     padding-top: 70px;
+    margin-left: 10px;
   }
 
   .intro-oneliner {
-    font: var(--lifely-mobile-secondary-font);
+    font: var(--lifely-web-big-secondary-font);
     font-style: normal;
 
     letter-spacing: 0.04em;
