@@ -499,7 +499,7 @@ footer {
 
     background-size: 120%;
     background-repeat: no-repeat;
-    height: 500px;
+    height: auto;
 
     display: grid;
     grid:
@@ -507,9 +507,7 @@ footer {
       " . . . t1 t1 t1 . ." 1fr
       " . . . t2 t2 t2 . ." 1fr
       " . . . . . . . ." 1fr
-      " . . . . . . . ." 1fr
-      " . . . . . . . ." 1fr
-      / 1fr 10px 1fr 1fr 1fr 150px 1fr;
+      / 1fr 10px 1fr 1fr 1fr 50px 1fr;
     gap: 10px;
 
     margin-bottom: 100px;
@@ -559,7 +557,7 @@ footer {
 
     background-size: 120%;
     background-repeat: no-repeat;
-    height: 500px;
+    height: auto;
 
     display: grid;
     grid:
