@@ -490,6 +490,59 @@ footer {
                             laptop view, small screens: starting at 769px 
 */
 @media screen and (min-width: 48.0625em) {
+  .main-content {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .title {
+    background-image: url(../assets/Foto_s/Studio/DSF8508.jpg);
+
+    background-size: 120%;
+    background-repeat: no-repeat;
+    height: 500px;
+
+    display: grid;
+    grid:
+      " . . . . .  . . ." 1fr
+      " . . . t1 t1 t1 . ." 1fr
+      " . . . t2 t2 t2 . ." 1fr
+      " . . . . . . . ." 1fr
+      " . . . . . . . ." 1fr
+      " . . . . . . . ." 1fr
+      / 1fr 10px 1fr 1fr 1fr 150px 1fr;
+    gap: 10px;
+
+    margin-bottom: 100px;
+  }
+
+  .intro {
+    margin: 0px;
+    grid-area: t1;
+    padding-top: 70px;
+  }
+
+  .intro-oneliner {
+    font: var(--lifely-mobile-secondary-font);
+    font-style: normal;
+
+    letter-spacing: 0.04em;
+    color: var(--lifely-grey70);
+
+    margin-bottom: 0px;
+  }
+
+  .main-title-box {
+    margin: 0px;
+    grid-area: t2;
+  }
+
+  /* 
+                            abstract section
+*/
+
+  .abstract-image img {
+    display: none;
+  }
 }
 
 /* 
@@ -512,8 +565,8 @@ footer {
     grid:
       ". . . . . .  . . ." 1fr
       ". . . t1 t1 t1 . . ." 1fr
-      ". . . t2 t2 t2 t2 . ." 1fr
-      ". . . t2 t2 t2 t2 . ." 1fr
+      ". . . t2 t2 t2 . . ." 1fr
+      ". . . . . . . . ." 1fr
       ". . . . . . . . ." 1fr
       ". . . . . . . . ." 1fr
       / 1fr 1fr 10px 1fr 1fr 40px 1fr 1fr;
