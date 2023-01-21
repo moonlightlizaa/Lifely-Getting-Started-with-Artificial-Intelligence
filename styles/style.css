@@ -501,27 +501,6 @@ footer {
     margin: 0px 0px 30px 0px;
   }
 
-  .main-title-box {
-    margin: 0px;
-    grid-area: t2;
-  }
-
-  .intro {
-    margin: 0px;
-    grid-area: t1;
-    padding-top: 70px;
-  }
-
-  .intro-oneliner {
-    font: var(--lifely-mobile-secondary-font);
-    font-style: normal;
-
-    letter-spacing: 0.04em;
-    color: var(--lifely-grey70);
-
-    margin-bottom: 0px;
-  }
-
   .title {
     background-image: url(../assets/Foto_s/Studio/DSF8508.jpg);
 
@@ -543,8 +522,25 @@ footer {
     margin-bottom: 100px;
   }
 
+  .intro {
+    margin: 0px;
+    grid-area: t1;
+    padding-top: 70px;
+  }
+
+  .intro-oneliner {
+    font: var(--lifely-mobile-secondary-font);
+    font-style: normal;
+
+    letter-spacing: 0.04em;
+    color: var(--lifely-grey70);
+
+    margin-bottom: 0px;
+  }
+
   .main-title-box {
-    margin-bottom: 30px;
+    margin: 0px;
+    grid-area: t2;
   }
 
   /* 
