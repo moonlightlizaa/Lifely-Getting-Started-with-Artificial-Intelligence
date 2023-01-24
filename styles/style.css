@@ -505,7 +505,7 @@ footer {
 /* 
                             laptop view, small screens: starting at 769px 
 */
-/* @media screen and (min-width: 48.0625em) {
+@media screen and (min-width: 64.0625em) {
   h1 {
     font: var(--lifely-web-big-primary-font);
     color: var(--lifely-grey99);
@@ -517,49 +517,6 @@ footer {
     color: var(--lifely-grey99);
   }
 
-  .main-content {
-    margin: 0px 0px 30px 0px;
-  }
-
-  .title {
-    display: grid;
-  }
-
-  .intro {
-    margin: 0px;
-    grid-area: t1;
-    padding-top: 70px;
-  }
-
-  .intro-oneliner {
-    font: var(--lifely-mobile-secondary-font);
-    font-style: normal;
-
-    letter-spacing: 0.04em;
-    color: var(--lifely-grey70);
-
-    margin-bottom: 0px;
-  }
-
-  .main-title-box {
-    margin: 0px;
-    grid-area: t2;
-  }
-
-  /* 
-                            abstract section
-*/
-/* 
-.abstract-image img {
-  width: 100%;
-  display: block;
-} */
-
-/* 
-                                    desktop, grote schermen: starting at 1025px  
-*/
-
-@media screen and (min-width: 48.0625em) {
   .main-content {
     margin: 0px 0px 30px 0px;
     display: block;
@@ -618,8 +575,10 @@ footer {
   .abstract {
     display: none;
   }
-
-  /* 
-                            abstract section
-*/
 }
+
+/* 
+                            abstract section
+/* 
+                                    desktop, grote schermen: starting at 1025px  
+*/
