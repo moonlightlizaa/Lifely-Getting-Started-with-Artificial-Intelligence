@@ -529,8 +529,10 @@ footer {
       ". title2 img ." 0.75fr
       ". t img ." 1fr
       ". . . ." 0.5fr
-      / 0.25fr 1fr 1fr 0.25fr;
+      / 0.5fr 1fr 1fr 0.25fr;
     gap: 20px;
+
+    justify-content: center;
   }
 
   .intro {
