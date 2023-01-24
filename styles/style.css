@@ -198,6 +198,7 @@ svg {
   font-family: "aktiv-grotesk";
   font-weight: 700;
   line-height: 1.125em;
+  text-decoration: none;
 
   font-size: 0.875em;
   margin: 0px 40px 40px 0px;
@@ -640,6 +641,7 @@ footer {
     font-family: "aktiv-grotesk";
     font-weight: 700;
     line-height: 20px;
+    text-decoration: none;
 
     font-size: 16px;
     margin: 0px 40px 40px 0px;
@@ -1058,6 +1060,7 @@ footer {
     font-family: "aktiv-grotesk";
     font-weight: 700;
     line-height: 20px;
+    text-decoration: none;
 
     font-size: 16px;
     margin: 0px 40px 40px 0px;
@@ -1362,5 +1365,61 @@ footer {
   }
   .days li:not(.active):hover::before {
     background: #f2f2f2;
+  }
+
+  /* 
+                                    footer 
+*/
+
+  footer {
+    position: relative;
+    background-color: var(--lifely-grey99);
+    color: var(--white);
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-flow: row wrap;
+    width: calc(100% - 1rem);
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 40px;
+  }
+
+  .footer-logo {
+    height: 24px;
+  }
+
+  .footer .main-content {
+    padding: 8px 0;
+    color: #c6c5bd;
+    text-decoration: none;
+    display: flex;
+    width: calc(100% - 1rem);
+  }
+
+  .footer-links {
+    padding: 0px 0px 8px 0px;
+  }
+
+  .footer-links .footer-item {
+    display: flex;
+    font: var(--lifely-mobile-footer-font);
+    color: var(--lifely-grey50);
+    list-style: none;
+    padding: 8px 0;
+  }
+
+  .footer-content .footer-text-title {
+    font: var(--lifely-mobile-footer-title-font);
+  }
+
+  .footer-content .footer-titles {
+    width: calc(100% - 1rem);
   }
 }
