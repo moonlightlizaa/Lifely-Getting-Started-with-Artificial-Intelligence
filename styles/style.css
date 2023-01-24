@@ -122,7 +122,7 @@ svg {
   margin: 25px 25px 75px 25px;
   grid:
     "H" 0.5fr
-    "C1" 1fr
+    "C1" 0.5fr
     / 1fr;
 }
 
@@ -132,6 +132,10 @@ svg {
 
 .main-title-box {
   margin-bottom: 30px;
+}
+
+.abstract-main-text {
+  display: none;
 }
 
 /* 
@@ -144,8 +148,11 @@ svg {
 
 .abstract-image img {
   width: 100%;
-
   margin-bottom: 30px;
+}
+
+.abstract-image-v2 {
+  display: none;
 }
 
 /* 
@@ -498,7 +505,7 @@ footer {
 /* 
                             laptop view, small screens: starting at 769px 
 */
-@media screen and (min-width: 48.0625em) {
+/* @media screen and (min-width: 48.0625em) {
   h1 {
     font: var(--lifely-web-big-primary-font);
     color: var(--lifely-grey99);
@@ -515,22 +522,7 @@ footer {
   }
 
   .title {
-    background-image: url(../assets/Foto_s/Studio/DSF8508.jpg);
-
-    background-size: 120%;
-    background-repeat: no-repeat;
-    height: auto;
-
     display: grid;
-    grid:
-      " . . . . .  . . ." 1fr
-      " . . . t1 t1 t1 . ." 1fr
-      " . . . t2 t2 t2 . ." 1fr
-      " . . . . . . . ." 1fr
-      / 1fr 10px 1fr 1fr 1fr 50px 1fr;
-    gap: 10px;
-
-    margin-bottom: 100px;
   }
 
   .intro {
@@ -557,44 +549,36 @@ footer {
   /* 
                             abstract section
 */
-
-  .abstract-image img {
-    display: none;
-  }
-}
+/* 
+.abstract-image img {
+  width: 100%;
+  display: block;
+} */
 
 /* 
                                     desktop, grote schermen: starting at 1025px  
 */
 
-@media screen and (min-width: 64.0625em) {
+@media screen and (min-width: 48.0625em) {
   .main-content {
     margin: 0px 0px 30px 0px;
+    display: block;
   }
 
   .title {
-    background-image: url(../assets/Foto_s/Studio/DSF8508.jpg);
-
-    background-size: 120%;
-    background-repeat: no-repeat;
-    height: auto;
-
     display: grid;
     grid:
-      ". . . t1 t1 t1 t1 . ." 1fr
-      ". . . t2 t2 t2 . . ." 1fr
-      ". . . t2 t2 t2 . . ." 1fr
-      ". . . . . . . . ." 1fr
-      / 1fr 1fr 50px 1fr 1fr 40px 1fr 1fr;
-    gap: 10px;
-
-    margin-bottom: 100px;
+      ". title1 title1 ." 0.5fr
+      ". title2 img ." 0.75fr
+      ". t img ." 1fr
+      ". . . ." 0.5fr
+      / 0.25fr 1fr 1fr 0.25fr;
+    gap: 20px;
   }
 
   .intro {
-    grid-area: t1;
-    padding-top: 70px;
-    margin-left: 10px;
+    grid-area: title1;
+    padding-top: 60px;
   }
 
   .intro-oneliner {
@@ -609,14 +593,33 @@ footer {
 
   .main-title-box {
     margin: 0px;
-    grid-area: t2;
+    grid-area: title2;
+  }
+
+  .abstract-image img {
+    width: 100%;
+    display: none;
+  }
+
+  .abstract-image-v2 {
+    display: block;
+    grid-area: img;
+  }
+
+  .abstract-image-v2 img {
+    width: 500px;
+  }
+
+  .abstract-main-text {
+    display: block;
+    grid-area: t;
+  }
+
+  .abstract {
+    display: none;
   }
 
   /* 
                             abstract section
 */
-
-  .abstract-image img {
-    display: none;
-  }
 }
