@@ -34,8 +34,10 @@
    !! only use base font for the normal text (p)
   */
 
-  --lifely-web-big-primary-font: 700 56px/68px "aktiv-grotesk", sans-serif;
+  --lifely-web-primary-font: 700 56px/68px "aktiv-grotesk", sans-serif;
+  --lifely-web-subtitles-font: 700 32px/40px "aktiv-grotesk", sans-serif;
   --lifely-web-big-secondary-font: 400 24px/34px "Playfair Display", serif;
+  --lifely-web-base-font: 300 26px/38px "aktiv-grotek", sans-serif;
 }
 
 /* 
@@ -506,17 +508,27 @@ footer {
                             laptop view, small screens: starting at 769px 
 */
 @media screen and (min-width: 64.0625em) {
+  /* 
+                                 typografie  
+  */
   h1 {
-    font: var(--lifely-web-big-primary-font);
+    font: var(--lifely-web-primary-font);
     color: var(--lifely-grey99);
     margin: 0px;
   }
 
-  p {
-    font: var(--lifely-mobile-base-font);
+  h2 {
+    font: var(--lifely-web-subtitles-font);
     color: var(--lifely-grey99);
   }
 
+  p {
+    font: var(--lifely-web-base-font);
+    color: var(--lifely-grey99);
+  }
+  /* 
+                                 title
+  */
   .main-content {
     margin: 0px 0px 30px 0px;
     display: block;
@@ -526,18 +538,18 @@ footer {
     display: grid;
     grid:
       ". title1 title1 ." 0.5fr
-      ". title2 img ." 0.75fr
+      ". title2 img ." 0.5fr
       ". t img ." 1fr
       ". . . ." 0.5fr
       / 0.5fr 1fr 1fr 0.25fr;
-    gap: 20px;
+    gap: 25px;
 
     justify-content: center;
   }
 
   .intro {
     grid-area: title1;
-    padding-top: 60px;
+    padding-top: 110px;
   }
 
   .intro-oneliner {
@@ -577,10 +589,56 @@ footer {
   .abstract {
     display: none;
   }
-}
 
-/* 
-                            abstract section
-/* 
-                                    desktop, grote schermen: starting at 1025px  
-*/
+  /* 
+                       buttons
+ */
+
+  .call-to-action {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    margin-bottom: -40px;
+  }
+
+  .lifely-primary-button {
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    padding: 12px 32px;
+    align-items: center;
+
+    background-color: var(--lifely-accent-red);
+    border: none;
+    color: var(--white);
+    font-family: "aktiv-grotesk";
+    font-weight: 700;
+    line-height: 20px;
+
+    font-size: 16px;
+    margin: 0px 40px 40px 0px;
+
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    transition-property: background-color, color;
+  }
+
+  .lifely-primary-button:hover {
+    background-color: var(--lifely-hover-red);
+  }
+
+  .lifely-secondary-button {
+    display: inline-flex;
+    align-items: center;
+    font-family: "aktiv-grotesk";
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ff6b6b;
+  }
+
+  /* 
+                                 dictionary quote
+  */
+}
