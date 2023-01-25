@@ -17,7 +17,7 @@ Er is gebruik gemaakt van HTML, CSS en JavaScript voor het maken van de website!
 
 <br>
 
-<img width="500" alt="Screenshot" src="https://user-images.githubusercontent.com/106411511/214620190-89ba0d1a-2264-4456-a12d-ab0516a9f988.PNG"><img width="500" alt="Screenshot" src="https://user-images.githubusercontent.com/106411511/214621182-0a2d0218-8e65-4282-a27f-8941d6b8cefb.PNG">
+<img width="300" alt="Screenshot" src="https://user-images.githubusercontent.com/106411511/214620190-89ba0d1a-2264-4456-a12d-ab0516a9f988.PNG"><img width="300" alt="Screenshot" src="https://user-images.githubusercontent.com/106411511/214621182-0a2d0218-8e65-4282-a27f-8941d6b8cefb.PNG">
 
 
 ## Licentie
