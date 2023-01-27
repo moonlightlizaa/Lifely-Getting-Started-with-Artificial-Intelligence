@@ -1,26 +1,44 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 # Lifely: Getting Started with Artificial Intelligence 
-Het innovatiebureau Lifely helpt organisaties de juiste technologische stappen te zetten in met onze experts op diverse gebieden. Binnen deze propositie willen zij graag machine learning lanceren. Hiervoor hebben zij een pagina nodig voor op de website waarmee de "AI Design Sprint" wordt uitgelegd. 
 
-
-
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<img width="1792" alt="Screenshot 2023-01-25 at 5 23 04 PM" src="https://user-images.githubusercontent.com/106411511/214618496-d96fdc76-de18-47d0-83f0-49293c1c7b9b.png">
-
+![readme](https://user-images.githubusercontent.com/106411511/215179674-c79ca9d1-2b0c-44e4-912a-104a5bb62c2c.jpg)
 <a href="http://lifely.eliza.student.fdnd.nl/">Getting Started with Artificial Intelligence</a>
 
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 
-Er is gebruik gemaakt van HTML, CSS en JavaScript voor het maken van de website! Ook is de website responsive, dus je kan het ook bekijken op telefoons, tablets en andere apparaten.
+Lifely heeft een nieuwe web page nodig voor de website waarmee de “AI Design Sprint” wordt uitgelegd. Hiervoor hebben zij content aangeleverd, zoals tekst, afbeeldingen, illustraties, lettertypes, een huisstijl gids en natuurlijk verschillende versies van het logo. 
 
-<br>
+Je mag de opdracht meer zien als het maken van een landingspage. De titel van de pagina is “Getting Started with Artificial Intelligence”. Op de pagina kan je ook een afspraak inplannen met een afspraak kalender (Het is niet verplicht om deze te maken, maar het zijn wel bonuspunten als het je lukt). 
 
-<img width="300" alt="Screenshot" src="https://user-images.githubusercontent.com/106411511/214620190-89ba0d1a-2264-4456-a12d-ab0516a9f988.PNG"><img width="300" alt="Screenshot" src="https://user-images.githubusercontent.com/106411511/214621182-0a2d0218-8e65-4282-a27f-8941d6b8cefb.PNG">
+## Inhoudsopgave 🌷
 
+<ul>
+<li>De opdrachtgever: Lifely</li>
+<li>Kenmerken website</li>
+<li>Creatief Process</li>
+</ul>
+
+
+## De opdrachtgever: Lifely
+
+Lifely werkt aan verschillende soorten projecten. Zo heeft Lifely bijvoorbeeld een app gemaakt voor het ministerie van defensie waarmee de boekhouding van onderhoud voor verschillende voertuigen simpel kan worden bijgehouden. Ook heeft Lifely een app gemaakt voor de HVA. Het gaat hierbij om een app om makkelijk info over jouw opleiding te vinden zoals roosters of beoordelingen.
+
+Lifely's doelgroep zijn voornamelijk bedrijven die behoeftig zijn in innovatie, mensen die iets willen bereiken voor de samenleving en organisaties die verstand hebben van technologie.
+
+
+## Kenmerken website
+
+Er is voor dit project gebruik gemaakt van HTML, CSS en JavaScript. De website is responsive, dus je zou het ook kunnen gebruiken op de telefoon, tablet of andere apparaten.
+
+<b>Gebruikte Tools</b>
+<ul>
+<li>Visual Studio Code</li>
+<li>Polypane</li>
+<li>Figma</li>
+<li>GoodNotes</li>
+<li>Adobe Photoshop</li>
+</ul>
 
 ## Licentie
 
