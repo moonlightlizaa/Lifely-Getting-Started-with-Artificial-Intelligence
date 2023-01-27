@@ -40,6 +40,10 @@ Er is voor dit project gebruik gemaakt van HTML, CSS en JavaScript. De website i
 <li>Adobe Photoshop</li>
 </ul>
 
+## Creatief Process 
+
+Geïnteresseerd in het process van het maken van deze webpagina? Bekijk <a href="https://github.com/moonlightlizaa/Lifely-Getting-Started-with-Artificial-Intelligence/wiki">hier</a> mijn wiki!
+
 ## Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
