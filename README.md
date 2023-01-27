@@ -3,6 +3,8 @@
 # Lifely: Getting Started with Artificial Intelligence 
 Het innovatiebureau Lifely helpt organisaties de juiste technologische stappen te zetten in met onze experts op diverse gebieden. Binnen deze propositie willen zij graag machine learning lanceren. Hiervoor hebben zij een pagina nodig voor op de website waarmee de "AI Design Sprint" wordt uitgelegd. 
 
+# Eindresultaat
+
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <img width="1792" alt="Screenshot 2023-01-25 at 5 23 04 PM" src="https://user-images.githubusercontent.com/106411511/214618496-d96fdc76-de18-47d0-83f0-49293c1c7b9b.png">
