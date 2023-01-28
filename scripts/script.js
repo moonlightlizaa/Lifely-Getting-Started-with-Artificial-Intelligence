@@ -5,6 +5,8 @@ tl.from(" .abstract-text, .call-to-action", {
   opacity: 0,
 });
 
+// Kalender (gemaakt met tutorial)
+
 const daysTag = document.querySelector(".days"),
   currentDate = document.querySelector(".current-date"),
   prevNextIcon = document.querySelectorAll(".icons span");
